@@ -188,13 +188,16 @@ header {
     }
 }
 
-/* ---- लोगो (Icons) का साइज़ छोटा करने और साइड स्क्रॉलिंग ठीक करने के लिए कोड ---- */
-body {
-    overflow-x: hidden; /* साइड स्क्रॉलिंग को रोकता है */
+/* ---- लोगो का साइज़ छोटा करने और साइड स्क्रॉलिंग ठीक करने के लिए अंतिम कोड ---- */
+.social-media-container img {
+    width: 100px; /* लोगो को छोटा करता है */
+    height: auto; 
+    margin: 10px; 
 }
 
-.social-media-container img {
-    width: 100px; /* सभी लोगो को 100 पिक्सेल चौड़ा करता है */
-    height: auto; 
-    margin: 10px; /* लोगो के बीच थोड़ी दूरी देता है */
+/* यह मुख्य कंटेंट को स्क्रीन से बाहर जाने से रोकता है */
+main {
+    overflow-x: hidden;
+    padding: 0;
+    max-width: 100%;
 }
