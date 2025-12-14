@@ -1,0 +1,189 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* **CRITICAL FIX 1:** यह सुनिश्चित करता है कि कोई भी गलती से बाहर निकला हुआ तत्व क्षैतिज स्क्रॉल न कराए */
+}
+
+main {
+    padding: 0; /* मेन के लिए पैडिंग हटा दी गई */
+    max-width: 100%;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3, h4 {
+    color: #004d99;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* --- Marquee Banner (Fix: इसे पूरी तरह से 100% चौड़ाई पर रखता है) --- */
+.welcome-marquee {
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px 0;
+    text-align: center;
+    overflow: hidden; /* **CRITICAL FIX 2:** अंदर के टेक्स्ट को कंट्रोल करता है */
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 100%; /* **CRITICAL FIX 3:** 100% चौड़ाई सुनिश्चित करता है */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* **CRITICAL FIX 4:** 100% चौड़ाई सुनिश्चित करता है */
+}
+
+.logo-img {
+    height: 40px;
+}
+/* ... (बाकी Navigation CSS) ... */
+
+/* --- Hero Section (Fix: ओवरफ्लो को हैंडल करना) --- */
+.hero-section {
+    background: linear-gradient(135deg, #007bff, #004d99);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 0; /* मोबाइल पर किनारे से चिपकने के लिए हटा दिया */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* **CRITICAL FIX 5:** 100% चौड़ाई सुनिश्चित करता है */
+}
+
+.hero-section h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+/* ... (बाकी Hero और CTA CSS) ... */
+
+/* --- Pricing Section --- */
+.pricing-section {
+    padding: 20px;
+}
+
+/* Price Table Container Fix */
+.price-table-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px; /* पैडिंग थोड़ी कम की */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow-x: auto; /* **CRITICAL FIX 6:** टेबल बड़ी होने पर केवल कंटेनर स्क्रॉल होगा, पूरा पेज नहीं */
+}
+
+.price-table {
+    width: 100%;
+    min-width: 400px; /* प्राइस टेबल की न्यूनतम चौड़ाई 400px रखी */
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.price-table th, .price-table td {
+    padding: 10px 5px; /* मोबाइल के लिए पैडिंग कम की */
+    font-size: 0.9em;
+}
+/* ... (बाकी Pricing CSS) ... */
+
+/* --- FAQ Section --- */
+.faq-section {
+    padding: 30px 20px;
+}
+/* ... (बाकी FAQ CSS) ... */
+
+
+/* --- VIDEO PROOF SECTION STYLING --- */
+.video-proof-section {
+    padding: 30px 20px; /* वीडियो सेक्शन के लिए पैडिंग वापस जोड़ी */
+    background-color: #f8f9fa;
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    width: 100%; /* 100% चौड़ाई सुनिश्चित करता है */
+}
+
+.video-container {
+    text-align: center; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    display: block;
+    margin: 0 auto;
+    width: 90%; 
+    max-width: 300px; /* Reel के साइज़ को नियंत्रित करता है */
+    height: 476px; /* Facebook Embed की दी गई ऊंचाई */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    nav ul li {
+        margin: 5px 8px;
+    }
+    
+    .hero-section {
+        padding: 40px 10px;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8em;
+    }
+    
+    .price-table-container {
+        padding: 10px;
+    }
+    
+    /* प्राइस टेबल मोबाइल पर भी स्क्रॉल होगी, लेकिन पेज नहीं टूटेगा */
+    .price-table {
+        min-width: 350px; 
+    }
+
+    .price-table th, .price-table td {
+        padding: 5px 3px;
+        font-size: 0.8em;
+    }
+
+    .video-proof-section {
+        padding: 20px 10px;
+    }
+}
