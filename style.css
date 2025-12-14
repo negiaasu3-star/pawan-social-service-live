@@ -1,137 +1,419 @@
-/* GLOBAL STYLES & RESET */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset and Base Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background for the main body */
-    overflow-x: hidden; /* CRITICAL: Prevents side scrolling */
+    box-sizing: border-box;
 }
 
-/* HEADER STYLES (Blue Background, Centered Nav) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    /* फिक्स 1: यह साइड स्क्रॉलिंग को 100% रोकेगा */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3, h4 {
+    color: #004d99;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* --- Marquee Banner --- */
+.welcome-marquee {
+    background-color: #ffc107; /* Yellow background */
+    color: #333;
+    padding: 8px 0;
+    text-align: center;
+    /* फिक्स 2: HTML marquee टैग का उपयोग होने के कारण CSS animation हटा दिया गया */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* @keyframes marquee ब्लॉक पूरी तरह से हटा दिया गया है */
+
+/* --- Header and Navigation --- */
 header {
-    background-color: #007bff; /* Bright Blue background */
-    color: white;
-    padding: 10px 0;
-    text-align: center; /* Center align all header content */
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-header p {
-    font-size: 14px;
-    margin-bottom: 5px;
-    padding-top: 5px;
-    letter-spacing: 1px;
+.logo-img {
+    height: 40px; /* Logo size */
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
     display: flex;
-    justify-content: center; /* Center the navigation links */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+    color: #004d99;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* MAIN CONTENT STYLES */
-main {
-    max-width: 100%;
-    margin: 0 auto;
+nav ul li a:hover {
+    color: #007bff;
+    text-decoration: none;
 }
 
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-/* HERO SECTION (Screen 1 Blue Background) */
+/* --- Hero Section --- */
 .hero-section {
-    background-color: #007bff; /* Bright Blue background */
+    background: linear-gradient(135deg, #007bff, #004d99); /* Blue gradient */
     color: white;
-    padding: 40px 20px;
-}
-
-.hero-section h1 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.hero-section p {
-    font-size: 16px;
-    margin-bottom: 25px;
-    padding: 0 10px;
-}
-
-.whatsapp-button {
-    display: inline-block;
-    background-color: #25d366; /* WhatsApp Green */
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* PRICE LIST SECTION */
-.price-list-section h2 {
-    color: #007bff; /* Blue heading color */
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+.hero-section h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-/* Price Table Styles (Clean) */
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* --- WhatsApp CTA Button (Hero) --- */
+.whatsapp-cta-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366; /* WhatsApp Green */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+}
+
+.whatsapp-cta-button:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.cta-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-cta-button.large {
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 1.4em;
+}
+
+/* --- Pricing Section --- */
+.pricing-section {
+    padding: 20px 0;
+}
+
+.whatsapp-instruction {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #dc3545; /* Red emphasis */
+}
+
 .price-table-container {
-    overflow-x: auto; /* Handle table overflow if needed */
-    margin: 20px auto;
-    max-width: 95%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.price-table-container h4 {
+    text-align: left;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service-logo {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
 }
 
 .price-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
-    text-align: left;
+    margin-top: 15px;
 }
 
 .price-table th, .price-table td {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    font-size: 14px;
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
 }
 
 .price-table th {
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #f0f8ff; /* Light blue header */
+    color: #004d99;
     font-weight: bold;
-    text-align: center;
 }
 
 .price-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Footer (Example) */
+.highlight-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9f7ff;
+    border-left: 5px solid #007bff;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.mini-whatsapp-cta {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.mini-whatsapp-cta:hover {
+    background-color: #128c7e;
+    text-decoration: none;
+}
+
+.small-inline-logo {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* --- FAQ Section --- */
+.faq-section {
+    padding: 30px 0;
+}
+
+.faq-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 15px;
+    border: none;
+    text-align: left;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #eee;
+}
+
+.faq-answer {
+    padding: 0 15px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.faq-answer p, .faq-answer ul, .faq-answer ol {
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.faq-answer h4 {
+    text-align: left;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+/* --- About Us / SMM Highlight Section (New Bottom Section) --- */
+.smm-highlight-section {
+    padding: 30px 20px;
+    background-color: #e6f7ff; /* Very light blue background */
+    border-top: 3px solid #007bff;
+    margin-top: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.highlight-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.panel-title {
+    color: #004d99;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.panel-description {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.service-heading, .link-heading {
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.service-list, .quick-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-list li, .quick-links li {
+    background-color: #fff;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #b3e0ff;
+    font-weight: 500;
+}
+
+.quick-links a {
+    color: #004d99;
+    font-weight: bold;
+}
+
+/* --- Footer --- */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    font-size: 12px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 0.9em;
 }
+
+/* ============================================== */
+/* --- VIDEO PROOF SECTION STYLING --- */
+/* ============================================== */
+
+.video-proof-section {
+    padding: 30px 20px;
+    background-color: #f8f9fa; /* हल्का बैकग्राउंड */
+    margin-bottom: 20px; /* Pricing से पहले थोड़ी दूरी */
+    border-radius: 8px;
+}
+
+.video-container {
+    /* Facebook embeds need specific alignment/sizing */
+    text-align: center; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* For Facebook's specific embed structure (Ensuring it is centered and responsive) */
+.video-container iframe {
+    display: block;
+    margin: 0 auto;
+    /* Maintain aspect ratio of Reel (Height is greater than width) */
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    .hero-section {
+        padding: 40px 15px;
+    }
+
+    .hero-section h2 {
+        font-size: 2em;
+    }
+    
+    .whatsapp-cta-button {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .price-table th, .price-table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    
+    .smm-highlight-section {
+        padding: 20px 15px;
+    }
+
+    .service-list li, .quick-links li {
+        font-size: 0.9em;
+    }
+    }
+    
