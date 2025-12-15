@@ -420,8 +420,8 @@ footer {
 
 .banner-section {
     /* (1) नया आकर्षक ग्रेडिएंट: नारंगी से गुलाबी */
-    background: linear-gradient(90deg, #ff8c00 0%, #ff4c99 100%);
-    padding: 60px 20px;
+    background: #1a1a40;(90deg, #ff8c00 0%, #ff4c99 100%);
+    padding: 40px 20px;
     color: white;
     text-align: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* शैडो थोड़ा गहरा किया */
@@ -497,5 +497,6 @@ footer {
         max-height: 300px;
     }
 }
+
 
 
