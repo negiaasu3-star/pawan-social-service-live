@@ -498,30 +498,3 @@ footer {
     content: "✅"; 
     margin-right: 10px;
 }
-/* --- New Pawan Media Header inside Banner --- */
-.top-announcement-bar {
-    padding-bottom: 30px; /* मुख्य शीर्षक से दूरी */
-}
-
-.top-announcement-bar .announcement-content {
-    color: white; /* टेक्स्ट का रंग सफेद करें */
-    text-align: center;
-}
-
-.announcement-content h1 {
-    font-size: 2.8em; /* Xmedia जैसा बड़ा, बोल्ड साइज़ */
-    font-weight: 900; /* बहुत मोटा (Extra Bold) */
-    margin: 0;
-    line-height: 1.1;
-    text-transform: uppercase; /* सभी को बड़े अक्षरों में बदलें */
-    letter-spacing: 2px; /* अक्षरों के बीच जगह दें */
-}
-
-.announcement-content p {
-    font-size: 1em; /* छोटा उप-शीर्षक */
-    margin: 10px 0 0 0;
-    opacity: 0.9;
-}
-
-
-
