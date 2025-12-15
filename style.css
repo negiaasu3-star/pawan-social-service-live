@@ -449,29 +449,31 @@ footer {
     transform: translateY(-3px); /* हल्का ऊपर उठाएँ (ज़्यादा आकर्षक) */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-/* --- Service Bullets inside Hero Section --- */
+/* --- Service Bullets inside Hero Section (Two Columns) --- */
 
 .service-bullets {
     list-style: none; /* बुलेट पॉइंट्स हटाएँ */
     padding: 0; /* पैडिंग हटाएँ */
     margin: 20px 0 30px 0; /* ऊपर और नीचे जगह दें */
+    
+    /* **दो कॉलम के लिए नया कोड** */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; /* आइटम्स को बीच में करें */
 }
 
 .service-bullets li {
-    font-size: 1.1em; /* टेक्स्ट का साइज़ थोड़ा बड़ा करें */
-    padding: 8px 0;
-    text-align: center; /* टेक्स्ट को बीच में करें */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* हल्की सफेद लाइन */
-    color: #f0f0f0; /* हल्का सफेद रंग */
+    font-size: 1.1em;
+    padding: 8px 10px; /* थोड़ी ज़्यादा पैडिंग */
+    text-align: left; 
+    width: 45%; /* प्रत्येक आइटम की चौड़ाई कम करें */
+    border-bottom: none; /* लाइन हटाएँ क्योंकि दो कॉलम हैं */
+    color: #f0f0f0;
+    margin: 5px 2%; /* आइटम के चारों ओर जगह दें */
 }
 
-.service-bullets li:last-child {
-    border-bottom: none; /* आखिरी आइटम पर लाइन न हो */
-}
-
-/* अगर आप आइकॉन जोड़ना चाहते हैं, तो यह CSS जोड़ सकते हैं */
+/* अगर आप आइकॉन जोड़ना चाहते हैं, तो यह CSS वही रहेगा */
 .service-bullets li::before {
-    content: "✅"; /* चेक मार्क आइकॉन */
+    content: "✅"; 
     margin-right: 10px;
 }
-
