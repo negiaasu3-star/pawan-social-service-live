@@ -477,4 +477,25 @@ footer {
     content: "✅"; 
     margin-right: 10px;
 }
+/* --- NEW TOP VIDEO CONTAINER STYLE --- */
+.top-video-container {
+    width: 100%;
+    /* वीडियो के ऊपर अगर कोई सफ़ेद जगह दिख रही हो तो इसे एडजस्ट करें */
+    margin-top: -10px; 
+    overflow: hidden; 
+}
+
+.website-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* छोटे स्क्रीन के लिए ऊँचाई कम करना (वैकल्पिक) */
+@media (max-width: 600px) {
+    .top-video-container {
+        max-height: 300px;
+    }
+}
+
 
