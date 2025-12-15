@@ -497,8 +497,9 @@ footer {
         max-height: 300px;
     }
 }
-/* Floating WhatsApp Button Styling (Centering Fixed) */
+/* Floating WhatsApp Button Styling (Final Centering Fix) */
 .whatsapp-float {
+    /* इस div को फिक्स्ड पोजीशन और साइज़ देता है */
     position: fixed;
     width: 60px; 
     height: 60px; 
@@ -508,22 +509,19 @@ footer {
     border-radius: 50px; 
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     z-index: 1000;
-    
-    /* Perfect Centering के लिए */
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
 }
 
 .whatsapp-float a {
+    /* a टैग को Flex कंटेनर बनाकर उसके अंदर Icon को सेंटर करते हैं */
+    display: flex; 
+    justify-content: center; /* हॉरिजॉन्टल सेंटरिंग */
+    align-items: center; /* वर्टिकल सेंटरिंग */
     width: 100%;
     height: 100%;
 }
 
 .whatsapp-float img {
+    /* Icon का साइज़ */
     width: 35px; 
     height: 35px;
-    /* ये नया स्टाइल है जो Icon को सेंटर में रखेगा */
-    display: block; 
-    margin: auto; 
 }
