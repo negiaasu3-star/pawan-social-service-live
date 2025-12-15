@@ -497,6 +497,34 @@ footer {
         max-height: 300px;
     }
 }
+/* Floating WhatsApp Button Styling */
+.whatsapp-float {
+    position: fixed; /* इसे स्क्रीन पर स्थिर रखता है */
+    width: 60px; /* बटन की चौड़ाई */
+    height: 60px; /* बटन की ऊँचाई */
+    bottom: 20px; /* नीचे से दूरी */
+    right: 20px; /* दाहिने से दूरी */
+    background-color: #25d366; /* WhatsApp हरा रंग */
+    border-radius: 50px; /* गोल आकार */
+    text-align: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    z-index: 1000; /* सुनिश्चित करता है कि यह सब कुछ के ऊपर दिखाई दे */
+}
+
+.whatsapp-float a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp-float img {
+    width: 35px; /* Icon साइज़ */
+    height: 35px;
+    margin-top: 13px; /* Icon को बीच में करने के लिए */
+}
+
 
 
 
