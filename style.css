@@ -416,4 +416,45 @@ footer {
         font-size: 0.9em;
     }
     }
-    
+    /* --- Banner Section Styles --- */
+
+.banner-section {
+    background: linear-gradient(90deg, #0f1c2c 0%, #1e3d59 100%); /* गहरा नीला/काला ग्रेडिएंट */
+    padding: 60px 20px; /* ऊपर और नीचे पैडिंग */
+    color: white; /* टेक्स्ट का रंग सफेद */
+    text-align: center; /* टेक्स्ट को केंद्र में करें */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* हल्का शैडो */
+}
+
+.banner-content h1 {
+    font-size: 2.5em; /* हेडलाइन का साइज़ */
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner-content p {
+    font-size: 1.1em; /* पैराग्राफ का साइज़ */
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* --- Call to Action Button Style --- */
+
+.banner-button {
+    display: inline-block;
+    background-color: #ff6b6b; /* आकर्षक लाल बटन */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none; /* अंडरलाइन हटाएँ */
+    border-radius: 5px; /* गोल कोने */
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* माउस ले जाने पर स्मूथ ट्रांज़िशन */
+}
+
+.banner-button:hover {
+    background-color: #e65a5a; /* माउस ले जाने पर गहरा रंग */
+    transform: translateY(-2px); /* हल्का ऊपर उठाएँ */
+}
+
+
