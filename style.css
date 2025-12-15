@@ -497,19 +497,6 @@ footer {
         max-height: 300px;
     }
 }
-/* Floating WhatsApp Button Styling */
-.whatsapp-float {
-    position: fixed; /* इसे स्क्रीन पर स्थिर रखता है */
-    width: 60px; /* बटन की चौड़ाई */
-    height: 60px; /* बटन की ऊँचाई */
-    bottom: 20px; /* नीचे से दूरी */
-    right: 20px; /* दाहिने से दूरी */
-    background-color: #25d366; /* WhatsApp हरा रंग */
-    border-radius: 50px; /* गोल आकार */
-    text-align: center;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    z-index: 1000; /* सुनिश्चित करता है कि यह सब कुछ के ऊपर दिखाई दे */
-}
 /* Floating WhatsApp Button Styling (Centering Fixed) */
 .whatsapp-float {
     position: fixed;
@@ -536,5 +523,7 @@ footer {
 .whatsapp-float img {
     width: 35px; 
     height: 35px;
-    /* अब कोई margin-top की ज़रूरत नहीं है */
+    /* ये नया स्टाइल है जो Icon को सेंटर में रखेगा */
+    display: block; 
+    margin: auto; 
 }
