@@ -554,3 +554,21 @@ footer {
     border-bottom: 1px solid #eee;
     font-weight: bold;
 }
+.order-btn {
+    display: block !important;
+    background-color: #ffc107 !important; /* चमकदार पीला बटन */
+    color: #000 !important; /* काला टेक्स्ट */
+    padding: 12px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    margin-top: 15px !important;
+    text-align: center !important;
+    transition: background 0.3s !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+}
+
+.order-btn:hover {
+    background-color: #e0a800 !important;
+}
+
