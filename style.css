@@ -525,58 +525,32 @@ footer {
     width: 35px; 
     height: 35px;
 }
-/* Pricing Cards Styling - Final */
-.pricing-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px 10px;
-    background-color: #f4f4f4; /* हल्का बैकग्राउंड */
-}
-
-.price-card {
+/* Modern Price Table Container Styling */
+.price-table-container {
     background: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* हल्की परछाई */
-    width: 290px;
     padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease; /* इफेक्ट को स्मूथ बनाने के लिए */
-    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* हल्की परछाई */
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
 }
 
-.price-card:hover {
-    transform: translateY(-10px); /* कार्ड ऊपर उठेगा */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* परछाई गहरी होगी */
+/* Hover Effect - कार्ड ऊपर उठेगा और चमकेगा */
+.price-table-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* परछाई गहरी होगी */
+    border-color: #25d366; /* बॉर्डर का रंग WhatsApp हरा हो जाएगा */
 }
 
-.price-card h3 {
-    color: #004d99;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.price-card .price {
-    font-size: 26px;
-    font-weight: bold;
-    color: #25d366; /* WhatsApp हरा रंग */
-    margin: 15px 0;
-}
-
-.order-btn {
-    display: block;
-    background-color: #ffc107; /* पीला बटन */
-    color: #000;
-    padding: 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 15px;
-    transition: background 0.3s;
 }
 
-.order-btn:hover {
-    background-color: #e0a800;
-    }
-
+.price-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
