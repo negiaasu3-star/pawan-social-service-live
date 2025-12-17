@@ -464,7 +464,7 @@ footer {
 
 .service-bullets li {
     font-size: 1.1em;
-    padding: 8px 10px; /* थोड़ी ज़्यादा पैडिंग */
+    padding: 4px 10px; /* थोड़ी ज़्यादा पैडिंग */
     text-align: left; 
     width: 45%; /* प्रत्येक आइटम की चौड़ाई कम करें */
     border-bottom: none; /* लाइन हटाएँ क्योंकि दो कॉलम हैं */
@@ -586,5 +586,6 @@ footer {
 .counter-icon {
     margin-right: 5px;
 }
+
 
 
