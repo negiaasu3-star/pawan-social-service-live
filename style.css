@@ -571,4 +571,20 @@ footer {
 .order-btn:hover {
     background-color: #e0a800 !important;
 }
+.order-counter {
+    background-color: rgba(255, 255, 255, 0.2); /* पारदर्शी सफ़ेद ताकि बैनर का रंग दिखे */
+    color: #ffffff; /* सफ़ेद टेक्स्ट */
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 15px 0; /* ऊपर और नीचे थोड़ी जगह */
+    font-size: 0.95em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px); /* हल्का धुंधला इफेक्ट */
+}
+
+.counter-icon {
+    margin-right: 5px;
+}
+
 
