@@ -710,6 +710,65 @@ footer {
 .red-glow { border: 1px solid #ef9a9a; box-shadow: 0 4px 12px rgba(244, 67, 54, 0.15); }
 .blue-glow { border: 1px solid #90caf9; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15); }
 .cyan-glow { border: 1px solid #80deea; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15); }
+/* --- FULL WEBSITE BLUE THEME (Social Growth Style) --- */
+
+/* 1. पूरी वेबसाइट का बैकग्राउंड नीला करें */
+body {
+    background-color: #007bff; /* वही नीला रंग जो ऊपर Hero सेक्शन में है */
+    background-image: linear-gradient(180deg, #007bff 0%, #0056b3 100%); /* हल्का शेड */
+    color: #ffffff; /* बाहर का सारा टेक्स्ट सफ़ेद (ताकि नीले पर दिखे) */
+    min-height: 100vh;
+}
+
+/* 2. जो सफ़ेद कार्ड्स हैं, उनके अंदर का टेक्स्ट काला रखें */
+.white-dashboard-card, 
+.price-table-container, 
+.video-proof-section,
+.faq-item {
+    background: #ffffff;
+    color: #333 !important; /* कार्ड के अंदर काला टेक्स्ट */
+    border-radius: 20px; /* कोनों को गोल करें */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* शैडो ताकि कार्ड हवा में दिखे */
+}
+
+/* 3. प्राइस टेबल और हेडिंग्स के रंग ठीक करें (कार्ड के अंदर) */
+.price-table-container h4,
+.price-table-container h3, 
+.price-table th, 
+.price-table td,
+.welcome-pink-box h2,
+.welcome-pink-box p {
+    color: #333 !important;
+}
+
+/* 4. FAQ सेक्शन को भी कार्ड जैसा बनाएं */
+.faq-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: none;
+}
+
+.faq-question {
+    background: transparent;
+    color: #007bff; /* सवाल नीले रंग में */
+    font-weight: bold;
+}
+
+.faq-answer p {
+    color: #555 !important;
+}
+
+/* 5. फूटर और बाहरी हेडिंग्स */
+footer p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+section > h3, section > h2 {
+    color: #ffffff; /* सेक्शन की मुख्य हेडिंग सफ़ेद */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
 
 
 
