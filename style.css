@@ -843,6 +843,53 @@ header nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(255, 118, 136, 0.6);
     background: linear-gradient(to right, #ff6ba6, #ff5e78); /* गहरा पिंक */
 }
+/* --- Updated Card Size & Nav Design --- */
+
+/* 1. कार्ड को चौड़ा (Wider) करें */
+.white-dashboard-card {
+    width: 95% !important; /* स्क्रीन का 95% हिस्सा भरेगा */
+    max-width: 600px !important; /* ज्यादा से ज्यादा इतना चौड़ा होगा */
+    padding: 15px !important;
+}
+
+/* 2. पिंक बॉक्स को छोटा (Shorter) करें */
+.welcome-pink-box {
+    padding: 10px 15px !important; /* पैडिंग कम की */
+    margin-bottom: 15px !important;
+}
+
+.welcome-pink-box h2 {
+    font-size: 1.2em !important; /* फोंट थोड़ा छोटा */
+    margin-bottom: 2px !important;
+}
+
+.welcome-pink-box p {
+    font-size: 0.85em !important;
+    margin-bottom: 10px !important;
+}
+
+/* 3. नेविगेशन लिंक्स को कार्ड के अंदर सेट करें */
+.card-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee; /* ऊपर एक हल्की लाइन */
+}
+
+.card-navigation a {
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    color: white !important;
+    padding: 6px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(255, 118, 136, 0.3);
+}
+
 
 
 
