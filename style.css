@@ -586,6 +586,132 @@ footer {
 .counter-icon {
     margin-right: 5px;
 }
+/* --- New Dashboard Hero Design (Social Growth Style) --- */
+
+.new-dashboard-hero {
+    background-color: #007bff; /* पीछे का नीला रंग */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* Marquee और वीडियो के नीचे सही जगह बनाने के लिए */
+    margin-top: 10px; 
+}
+
+.white-dashboard-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px; /* मोबाइल पर एकदम ऐप जैसा दिखेगा */
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 1. Pink Welcome Box */
+.welcome-pink-box {
+    background: linear-gradient(180deg, #fff0f5 0%, #ffffff 100%);
+    border: 2px solid #ffb6c1; /* पिंक बॉर्डर */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.2); /* पिंक ग्लो */
+    margin-bottom: 10px;
+}
+
+.welcome-pink-box h2 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.welcome-pink-box p {
+    font-size: 0.9em;
+    color: #d63384; /* गहरा पिंक टेक्स्ट */
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.hero-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pill-btn {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.pill-btn:hover { transform: scale(1.05); }
+
+.btn-pink { background: linear-gradient(to right, #ff5f6d, #ffc371); }
+.btn-blue { background: linear-gradient(to right, #2193b0, #6dd5ed); }
+
+/* 2. Service Pills (Stat Cards) */
+.service-pill {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 12px 15px;
+    border-radius: 50px; /* कैप्सूल जैसा आकार */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    border: 1px solid transparent;
+}
+
+.service-pill:hover { transform: translateY(-3px); }
+
+/* Icons inside circle */
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    min-width: 45px; /* सिकुड़े नहीं */
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+.icon-circle img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.pill-info h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #222;
+    font-weight: 700;
+}
+
+.pill-info p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* Glow Border Colors */
+.green-glow { border: 1px solid #a5d6a7; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15); }
+.orange-glow { border: 1px solid #ffcc80; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15); }
+.red-glow { border: 1px solid #ef9a9a; box-shadow: 0 4px 12px rgba(244, 67, 54, 0.15); }
+.blue-glow { border: 1px solid #90caf9; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15); }
+.cyan-glow { border: 1px solid #80deea; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15); }
+
+
 
 
 
