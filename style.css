@@ -803,6 +803,47 @@ section > h3, section > h2 {
 #about-us-info h3, #about-us-info li {
     color: #333 !important;
 }
+/* --- Header Navigation Buttons (Pink Pill Style) --- */
+
+/* 1. हैडर का बैकग्राउंड हटा दें ताकि बटन नीले बैकग्राउंड पर तैरते हुए दिखें */
+header {
+    background: transparent !important; /* वाइट बैकग्राउंड हटाया */
+    padding: 15px 0;
+    box-shadow: none !important;
+}
+
+/* 2. लिंक्स को एक लाइन में सेट करें */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* मोबाइल में जगह न होने पर नीचे आ जाएं */
+    gap: 10px; /* बटन्स के बीच गैप */
+    padding: 0;
+    list-style: none;
+}
+
+/* 3. लिंक्स को 'Add Fund' जैसे बटन में बदलें */
+header nav ul li a {
+    background: linear-gradient(to right, #ff7eb3, #ff758c); /* पिंक ग्रेडिएंट कलर */
+    color: #ffffff !important; /* टेक्स्ट सफ़ेद */
+    padding: 8px 18px; /* बटन का साइज़ */
+    border-radius: 50px; /* कोनों को पूरी तरह गोल (Pill shape) करें */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(255, 118, 136, 0.4); /* पिंक शैडो */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* हल्का बॉर्डर */
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+/* 4. बटन पर उंगली रखने पर इफेक्ट */
+header nav ul li a:hover {
+    transform: translateY(-3px); /* थोड़ा ऊपर उठेगा */
+    box-shadow: 0 6px 12px rgba(255, 118, 136, 0.6);
+    background: linear-gradient(to right, #ff6ba6, #ff5e78); /* गहरा पिंक */
+}
+
 
 
 
