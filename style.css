@@ -768,6 +768,42 @@ section > h3, section > h2 {
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     margin-bottom: 20px;
 }
+/* --- Pink Text Box Style (Like Social Growth) --- */
+.pink-text-box {
+    background-color: #ffeef2; /* हल्का पिंक बैकग्राउंड */
+    border: 1px solid #ffc1e3; /* पिंक बॉर्डर */
+    border-radius: 15px; /* गोल कोने */
+    padding: 20px;
+    margin: 25px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.pink-text-box h3 {
+    color: #d63384 !important; /* हेडिंग का रंग गहरा पिंक */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.pink-text-box p {
+    color: #333 !important; /* टेक्स्ट का रंग काला (ताकि साफ़ दिखे) */
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* About Us वाले सेक्शन के लिए वाइट कार्ड */
+#about-us-info {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    color: #333 !important;
+}
+#about-us-info h3, #about-us-info li {
+    color: #333 !important;
+}
+
 
 
 
